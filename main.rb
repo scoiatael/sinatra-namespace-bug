@@ -9,14 +9,10 @@ namespace '/1' do
                   rescue
                     {}
                   end
-    p params
-    p json_params
     params.merge! json_params
   end
 
   post '/?' do
-    p request
-    p params
     params[:a].to_s
   end
 end
