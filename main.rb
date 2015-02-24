@@ -4,15 +4,10 @@ require 'json'
 
 namespace '/1' do
   before do
-    json_params = begin
-                    JSON.parse(request.body.read.to_s)
-                  rescue
-                    {}
-                  end
-    params.merge! json_params
+    params[:a] = 123
   end
 
-  post '/?' do
+  get '/?' do
     params[:a].to_s
   end
 end
