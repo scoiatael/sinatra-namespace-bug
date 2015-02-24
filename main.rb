@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/namespace'
 
-namespace '/1' do
+namespace '/v1' do
   before do
     params[:a] = 123
   end
