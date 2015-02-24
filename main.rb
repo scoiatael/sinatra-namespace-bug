@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'sinatra/namespace'
-require 'json'
 
 namespace '/1' do
   before do
